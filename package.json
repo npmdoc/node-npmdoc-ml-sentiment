@@ -1,1 +1,39 @@
-{     "devDependencies": {         "ml-sentiment": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-ml-sentiment",     "homepage": "https://github.com/npmdoc/node-npmdoc-ml-sentiment",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-ml-sentiment.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [ml-sentiment (v2.0.7)](https://github.com/syzer/sentiment-analyser#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-ml-sentiment.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ml-sentiment) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ml-sentiment.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ml-sentiment)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "ml-sentiment": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-ml-sentiment",
+    "keywords": [
+        "documentation",
+        "ml-sentiment"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_ml_sentiment.js",
+    "name": "npmdoc-ml-sentiment",
+    "nameAlias": "npmdoc_ml_sentiment",
+    "nameOriginal": "npmdoc-ml-sentiment",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-ml-sentiment.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
