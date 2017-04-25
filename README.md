@@ -1,4 +1,7 @@
-# api documentation for  [ml-sentiment (v2.0.7)](https://github.com/syzer/sentiment-analyser#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-ml-sentiment.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ml-sentiment) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ml-sentiment.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ml-sentiment)
+# npmdoc-ml-sentiment
+
+#### basic api documentation for  [ml-sentiment (v2.0.7)](https://github.com/syzer/sentiment-analyser#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-ml-sentiment.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ml-sentiment) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ml-sentiment.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ml-sentiment)
+
 #### Machine learner sentiment classifier, with ability to negate words, with english and german
 
 [![NPM](https://nodei.co/npm/ml-sentiment.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/ml-sentiment)
@@ -65,7 +68,8 @@
         "coverage-local": "istanbul cover node_modules/argg test/*.js",
         "test": "tap test/*.js"
     },
-    "version": "2.0.7"
+    "version": "2.0.7",
+    "bin": {}
 }
 ```
 
